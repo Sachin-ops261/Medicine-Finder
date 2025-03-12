@@ -445,13 +445,13 @@ function addAlternative()
     {
         for(let j = 0; j<allMeds[i].alt.length; j++)
         {
-            if(allMeds[i].alt[j].name.toLowerCase().includes(search))
+            if(allMeds[i].name.toLowerCase().includes(search))
             {
                 alternativeArray.push(allMeds[i].alt[j]);
             }
         }
-        showAlternative(alternativeArray, search);
     }
+    showAlternative(alternativeArray, search);
     // console.log(alternativeArray);
 }
 
