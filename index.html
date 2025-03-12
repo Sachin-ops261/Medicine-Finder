@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headder">
+            <a href="">Home</a>
+            <a href="">Contact us</a>
+        </div>
+        <div class="main">
+            <div class="inputArea">
+                <label for="med">Medicine Name</label>
+                <input type="text" id="med" oninput="find(event)">
+                <p id="noDataMessage"></p>
+                <button onclick="addAlternative()">Find Alternatives</button>
+            </div>
+            <div class="footer">
+                <div class="leftSide">
+                    <h1>Your Trusted <span>Medicine Finder</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <img src="https://content.jdmagicbox.com/comp/lucknow/l9/0522px522.x522.220327203038.d6l9/catalogue/prdhan-mantri-jan-aushadhi-kendra-lucknow-chemists-0fkvatjnq1.jpg" alt="">
+            </div>
+            <div class="searchResult">
+                <div class="product">
+                <p onclick="displayOrg()" class="org">Original Medicine</p>
+                <div class="original">
+                    <!-- <img src="https://www.netmeds.com/images/product-v1/600x600/1136339/daramin_25mg_tablet_10s_742022_0_0.jpg" alt=""> -->
+                    <!-- <div class="content">
+                        <p>Name: Benadryl</p>
+                        <p>Manufacturer: Cipla</p>
+                        <p class="price">Per Unit Price: Rs.12</p>
+                    </div> -->
+                </div>
+                <p class="alt">Best Alternatives</p>
+                    <div class="alternative">
+                        <!-- <div class="oneItem">
+                            <img src="https://www.netmeds.com/images/product-v1/600x600/1136339/daramin_25mg_tablet_10s_742022_0_0.jpg" alt="">
+                            <div class="content2">
+                                <p>Name: Something</p>
+                                <p>Manufacturer: Cipla</p>
+                                <p class="price">Per Unit Price: Rs.7</p> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
