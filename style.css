@@ -18,6 +18,7 @@ body{
     min-width: 300px;
     background: gainsboro;
     overflow: auto;
+    border-radius: 10px;
 }
 
 .headder{
@@ -41,6 +42,7 @@ body{
     height: 550px;
     justify-content: space-between;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .inputArea{
@@ -111,6 +113,19 @@ body{
     color: black;
 }
 
+@keyframes contentFlote {
+    from {
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.searchResult{
+    animation: contentFlote .5s ease-out forwards;
+}
+
 .product{
     display: flex;
     flex-direction: column;
@@ -126,6 +141,10 @@ body{
     border-radius: 50px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.org{
+    box-shadow: 0px 4px 4px black;
 }
 
 
@@ -153,15 +172,82 @@ body{
     font-weight: bold;
 }
 
+
 .fullData,.oneItem{
     display: flex;
     flex-direction: row;
     margin: 20px 0;
     gap: 30px;
     align-items: center;
+    box-shadow: 0px 5px 7px black;
+    padding: 10px;
+    width: 320px;
+    height: fit-content;
+    border-radius: 12px;
 }
 
 .alternative{
     display: flex;
     flex-direction: column;
+}
+
+.Alter{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.Alter{
+    animation: slideLeft 1s ease-out forwards;
+}
+
+.Alter:hover{
+    box-shadow: 0px 5px 10px black;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#med,.label{
+    animation: slideDown 0.9s ease-out forwards;
+}
+
+#med:focus{
+    box-shadow: 0px 5px 6px black;
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.leftSide{
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
 }
