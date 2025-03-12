@@ -360,6 +360,7 @@ const footer = document.querySelector(".footer");
 const footerLeft = document.querySelector(".leftSide");
 const searchResult = document.querySelector(".searchResult");
 const noDataMessage = document.getElementById("noDataMessage");
+const alternative = document.querySelector(".alternative");
 let originalDiv = document.querySelector(".original");
 
 
@@ -455,7 +456,6 @@ function addAlternative()
     // console.log(alternativeArray);
 }
 
-const alternative = document.querySelector(".alternative");
 
 
 
