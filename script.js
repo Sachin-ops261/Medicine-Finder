@@ -427,6 +427,7 @@ function addMeds(search)
 function find(event)
 {
     originalDiv.style.display = "block";
+    alternative.style.display = "none";
     footer.style.display = "none";
     footerLeft.style.display = "none";
     searchResult.style.display = "block";
@@ -461,6 +462,7 @@ function addAlternative()
 
 function showAlternative(alternativeArray, search)
 {
+    alternative.style.display = "block";
     let originalDiv = document.querySelector(".original");
     originalDiv.style.display = "none";
     alternative.innerHTML = "";
